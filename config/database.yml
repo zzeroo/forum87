@@ -1,0 +1,23 @@
+development:
+  adapter: mysql2
+  encoding: latin1
+  database: forum87_development
+  username: zzeroo
+  password: asrael
+  host: 192.168.56.100
+
+production:
+  adapter: mysql2
+  encoding: latin1
+  database: forum87
+  username: zzeroo
+  password: asrael
+  host: 192.168.56.100
+
+test:
+  adapter: mysql2
+  encoding: latin1
+  database: forum87_test
+  username: zzeroo
+  password: asrael
+  host: 192.168.56.100
