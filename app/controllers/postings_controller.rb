@@ -3,7 +3,8 @@ class PostingsController < ApplicationController
   # GET /postings.xml
   def index
     @postings = Posting.all
-    
+    @postings = Posting.find_all_by_user_id(params[:user_id]) if params[:user_id]
+
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @postings }

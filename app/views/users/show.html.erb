@@ -1,8 +1,27 @@
 <p id="notice"><%= notice %></p>
 
-<h1><%= @user.name %></h1>
-<%= link_to 'Home', root_path %> |
-<%= link_to 'Back', users_path %>
+<div class="normal">
+  <h1><%= @user.name %></h1>
+  <p><i><small><%= @user.string2 %></small></i></p>
 
+  <%= link_to 'Home', root_path %> |
+  <%= link_to 'Benutzerübersicht', users_path %>
 
-<%= link_to 'Back', users_path %>
+  <p class="userimage">
+    <img src="<%= @user.string5 %>" />
+  </p>
+
+  <ul>
+    <li>Website: <%= @user.string0 %></li>
+    <li>Email: <%= @user.email %></li>
+    <li>Location: <%= @user.string4 %></li>
+    <li>Rang: <%= @user.string6 %></li>
+  </ul>
+
+  <p>
+    <%= @user.postings.size %>&nbsp;<%= link_to "Postings des Benutzers", user_postings_path(@user) %>
+  </p>
+</div>
+
+<br />
+<%= link_to 'Benutzerübersicht', users_path %>

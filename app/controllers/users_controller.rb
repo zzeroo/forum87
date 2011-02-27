@@ -21,4 +21,14 @@ class UsersController < ApplicationController
     end
   end
 
+  def posting
+    @user = User.find(params[:id])
+    @postings = @user.postings
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @user }
+    end
+
+  end
 end

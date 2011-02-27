@@ -5,6 +5,7 @@
   <tr>
     <th>ID</th>
     <th>Benutzername</th>
+    <th>Postings</th>
     <th></th>
   </tr>
 
@@ -12,6 +13,7 @@
   <tr>
     <td><%= user.id %></td>
     <td><%= link_to user.name, user %></td>
+    <td><%= user.postings.count %></td>
     <td><%= link_to 'Show', user %></td>
   </tr>
 <% end %>

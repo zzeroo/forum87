@@ -5,7 +5,9 @@ Forum87::Application.routes.draw do
 
   resources :postings
 
-  resources :users
+  resources :users do
+    resources :postings
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
