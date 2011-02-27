@@ -1,4 +1,8 @@
 Forum87::Application.routes.draw do
+  resources :topics
+
+  resources :areas
+
   resources :postings
 
   resources :users
