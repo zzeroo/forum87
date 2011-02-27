@@ -1,4 +1,6 @@
 Forum87::Application.routes.draw do
+  resources :foos
+
   resources :users
 
   # The priority is based upon order of creation:
