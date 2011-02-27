@@ -1,17 +1,17 @@
 <h1>Alle Benutzer</h1>
+<%= link_to "Home", root_path %>
 
-<table>
+<table class="normal">
   <tr>
     <th>ID</th>
     <th>Benutzername</th>
+    <th></th>
   </tr>
 
   <% @users.each do |user| %>
   <tr>
     <td><%= user.id %></td>
     <td><%= link_to user.name, user %></td>
-  </tr>
-  <tr>
     <td><%= link_to 'Show', user %></td>
   </tr>
 <% end %>

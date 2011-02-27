@@ -1,0 +1,17 @@
+div#main {
+  width: 80%;
+  margin: auto;
+  }
+  div#main .normal p, li, tr > td { 
+    font-family: "Verdana", "Helvetica", sans;
+    font-size: 1.32em;
+    line-height: 1.2em;
+  }
+  #main h1 {
+    color: windowtext;
+    font-family: "Thahoma";
+    font-size: 3em;
+    }
+  #main h2 {
+    font-family: "Monaco", fixed;
+    }

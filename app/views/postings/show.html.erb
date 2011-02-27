@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @posting.id %></h1>
+<h2><%= @posting.subtitle %></h2>
+<%= link_to 'Home', root_path %> |
+<%= link_to 'Back', postings_path %>
+
+<pre><%= @posting.content %></pre>
+
+<%= link_to 'Back', postings_path %>
