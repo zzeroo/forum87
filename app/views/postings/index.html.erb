@@ -1,7 +1,9 @@
 <h1>Alle Postings</h1>
-<%= link_to "Home", root_path %>
+<ul class="menu">
+  <li><%= link_to "Home", root_path %></li>
+</ul>
 
-<table class="normal" border=1>
+<table class="normal simple">
   <tr>
     <th>ID</th>
     <th>&Uuml;berschrift</th>
@@ -15,7 +17,7 @@
     <td><%= link_to 'Show', posting %></td>
   </tr>
   <tr>
-    <td colspan=3><%= posting.content %></td>
+    <td colspan=3><pre><%= posting.content %></pre></td>
   </tr>
 <% end %>
 </table>
