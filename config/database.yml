@@ -12,7 +12,7 @@ production:
   database: forum87
   username: zzeroo
   password: asrael
-  host: zzeroo.org
+  host: 127.0.0.1
 
 test:
   adapter: mysql2
